@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------Reset Ends...Mine Begins---------------*/
+
+
+/*----------------CUSTOM STYLES -----------------*/
+body {
+	color: #888;
+	font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url("http://suruleretv.net/wp-content/uploads/2016/01/Website-Background.jpg");
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1, h2, h3, h4 {
+	color: #648880;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+	text-transform: uppercase;
+}
+
+strong {
+	font-weight: 400;
+}
+
+cite, em {
+	font-style: italic;
+}
+
+li {
+	margin: 0 10px;
+}
+
+dd {
+	margin-left: 22px;
+}
+
+img {
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+/*------------------------LINKS ----------------*/
+
+a:hover {
+	color: #a9b2b9;
+}
+
+a {
+	color: #648880;
+	text-decoration: none;
+}
+
+p a {
+	border-bottom: 1px solid #dfe2e5;
+}
+
+
+
+
+/*-------------Grid----------------*/
+
+*,
+*:before,
+*:after { -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+			box-sizing: border-box;
+		} /*Universal Selector Tool*/
+
+.container {   /*The . means its a class*/
+	width: auto;
+	padding-left: 80;
+	padding-right: 30;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col-1-3 {
+	margin-top: 30px;
+	width: 33.33%;
+}
+.col-2-3 {
+	width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+	padding-left: 40px; /*Move down for left*/
+	padding-right: 55px; /*Opposite*/
+}
+
+.container,
+.grid {
+	margin: 0 auto;
+	width: 1080px;
+}
+
+.container {
+	padding-top:30px;
+	padding-left:40px;
+	padding-right:30px;
+}
+
+
+
+
+
+/*---------Typography---------*/
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-bottom: 14px;
+}
+
+/*-------Buttons---------
+.btn {
+	border-radius: 5px;
+	cursor: #fff;
+	display: inline-block;
+	font-weight: 400;
+	letter-spacing: .5px;
+	margin: 0;
+	height: 55px;
+	line-height: 33px;
+	color: #000000;
+	text-transform: uppercase;
+}
+.btn-alt {
+	border: 5px solid #000000;
+	padding: 10px 30px;
+}
+
+.btn-alt:hover {
+	background: #000000
+	color: #648880;
+}
+*/
+
+
+/*--------HOME----------*/
+
+.hero {
+	padding: 22px 80px 66px 80px;
+	line-height: 44px;
+	text-align: center;
+	color: #808880
+}
+
+.hero h2 {
+	font-size: 36px;
+}
+
+.hero p {
+	font-size:24px;
+}
+
+p {
+	background: none;
+	font-size:24px;
+	text-align: center;
+}
+
+div {
+	height: 100px;
+	margin: 10px 20px 0 15px; /* top right bottom left */
+	/*margin-top: 10px;
+	  padding-left: 6px;
+  */
+	border: 6px solid #949599;
+	border-radius: 5px; /*round the edges */
+
+}
+
+/*-------------------- Primary Header ----------------*/
+
+.logo {
+	border-top: 4px solid #648880;
+	padding: 20px 0px 20px 0px;
+	float: left;
+	font-size: 48px;
+	line-height: 44px;
+}
+
+.primary-header a,
+.primary-footer a {
+	color: #008880;
+}
+
+.primary-header a:hover,
+.primary-footer a:hover {
+	color: #648880;
+}
+
+/*--------------Primary Nav -----------------*/
+
+.primary-nav {
+	margin-top: 42px;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-right: 100px;
+}
+
+
+/* -------------- Primary Footer --------------*/
+
+.primary-footer {
+	color: #648880;
+	font-size: 14px;
+	padding-bottom: 44px;
+	padding-top: 100px;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	padding-right: 840px;
+	text-align: center;
+}
+
+
+.primary-footer small {
+
+	padding-bottom: 44px;
+	padding-top: 44px;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+
+
+/*---------    Clearfix  -------------------------*/
+
+.group:before,
+.group:after {
+	content: "";
+  display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+section {
+  float: inline-block;
+  margin: 0 1.5%;
+  width: 63%;
+}
+
+aside {
+  float: inline-block;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+footer {
+	clear: both;
+}
